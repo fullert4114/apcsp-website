@@ -1,18 +1,22 @@
- # the compiler: gcc for C program, define as g++ for C++
-  CC = gcc
+TARGET = projectmake
+LIBS = -lm
+CC = gcc
+CFLAGS = -g -Wall -I.
 
-  # compiler flags:
-  #  -g    adds debugging information to the executable file
-  #  -Wall turns on most, but not all, compiler warnings
-  CFLAGS  = -g -Wall
+.PHONY: clean all default
 
-  # the build target executable:
-  TARGET = actionPage
+default: $(TARGET)
+all: default
 
-  all: $(TARGET)
+HEADERS = $(wildcard *.h)
+OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))
 
-  $(TARGET): $(TARGET).c
-  	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
+%.o: %.c $(HEADERS)
+    $(CC) $(CFLAGS) -c $< -o $@
 
-  clean:
-  	$(RM) $(TARGET)
+$(TARGET): $(OBJECTS)
+    $(CC) $^ $(LIBS) -o $@
+
+clean:
+    -rm -f *.o
+    -rm -f $(TARGET)
