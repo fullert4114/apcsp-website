@@ -48,37 +48,37 @@ char Animal (int seeds, int mailmen, int run, int scream)
 {
 
     if(seeds == 0 && mailmen == 0 && run == 0 && scream == 0){
-        char output[] =  "You are a pet rock!\n";   
+        printf("You are a pet rock!\n");   
     } else if (seeds == 0 && mailmen == 0 && run == 0 && scream ==1){
-        char output[] ="You are a Friendly Goat!\n";
+        printf("You are a Friendly Goat!\n");
     } else if (seeds == 0 && mailmen == 0 && run == 1 && scream ==0){
-        char output[] ="You are a Cheeta!\n";
+        printf("You are a Cheeta!\n");
     } else if (seeds == 0 && mailmen == 0 && run == 1 && scream ==1){
-        char output[]="You are a Chimp!\n";
+        printf("You are a Chimp!\n");
     } else if (seeds == 0 && mailmen == 1 && run == 0 && scream ==0){
-        char output[]="You are a Fox!\n";
+        printf("You are a Fox!\n");
     } else if (seeds == 0 && mailmen == 1 && run == 0 && scream ==1){
-        char output[]="You are a Mean Goat!\n";
+        printf("You are a Mean Goat!\n");
     } else if (seeds == 0 && mailmen == 1 && run == 1 && scream ==0){
-        char output[]="You are a Cheeta!\n";
+        printf("You are a Cheeta!\n");
     } else if (seeds == 0 && mailmen == 1 && run == 1 && scream ==1){
-        char output[]="You are a Gaurd Dog!\n";
+        printf("You are a Gaurd Dog!\n");
     } else if (seeds == 1 && mailmen == 0 && run == 0 && scream ==0){
-        char output[]="You are a Chipmunk!\n";
+        printf("You are a Chipmunk!\n");
     } else if (seeds == 1 && mailmen == 0 && run == 0 && scream ==1){
-        char output[]="You are Tasha!\n";
+        printf("You are Tasha!\n");
     } else if (seeds == 1 && mailmen == 0 && run == 1 && scream ==0){
-        char output[]="You are a Chicken!\n";
+        printf("You are a Chicken!\n");
     } else if (seeds == 1 && mailmen == 0 && run == 1 && scream ==1){
-        char output[]="You are a Friendly Seagull!\n";
+        printf("You are a Friendly Seagull!\n");
     } else if (seeds == 1 && mailmen == 1 && run == 0 && scream ==0){
-        char output[]="You are a Raccon!\n";
+        printf("You are a Raccon!\n");
     } else if (seeds == 1 && mailmen == 1 && run == 0 && scream ==1){
-        char output[]="You are a Seagull!\n";
+        printf("You are a Seagull!\n");
     } else if (seeds == 1 && mailmen == 1 && run == 1 && scream ==0){
-        char output[]="You are a Quiet Gaurd Goose!\n";
+        printf("You are a Quiet Gaurd Goose!\n");
     } else if (seeds == 1 && mailmen == 1 && run == 1 && scream ==1){
-        char output[]="You're a Goose!\n";
+        printf("You're a Goose!\n");
     } else{
         printf("Should never run"); 
    }
